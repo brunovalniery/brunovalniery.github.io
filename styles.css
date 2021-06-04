@@ -70,7 +70,7 @@ header{
 #wrapper p{
     max-width: 500px;
     margin: 32px auto;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 34px;
 }
 
@@ -128,4 +128,23 @@ header{
     height: 100%;
     position: fixed;
     top: 0;
+}
+
+/*Live da formatura*/
+.video-formatura{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.video-formatura img{
+    height: 315px;
+
+    position:relative;
+}
+
+#formatura{
+    color: var(--color-yellow);
 }
