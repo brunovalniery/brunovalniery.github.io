@@ -2,6 +2,7 @@
 
 :root{
     --color-yellow: #fbff09;
+    --color-darkyellow: #b8990f;
 }
 
 *{
@@ -45,7 +46,7 @@ header{
     border-radius: 50%;
     border: 3px solid var(--color-yellow);
     margin-bottom: 32px;
-    height: 250px;
+    height: 200px;
 }
 
 #wrapper h1{
@@ -121,13 +122,34 @@ header{
 }
 
 /*MODAL*/
-
 .modal-overlay{
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
+    opacity: 0;
+}
+
+.modal{
+    background-color:white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal{
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/*MODAL.ACTIVE*/
+.modal-overlay.active{
+    opacity: 1;
 }
 
 /*Live da formatura*/
@@ -141,10 +163,48 @@ header{
 
 .video-formatura img{
     height: 315px;
+    position:relative;
+}
 
+.video-formatura iframe{
+    height: 315px;
     position:relative;
 }
 
 #formatura{
     color: var(--color-yellow);
+}
+
+
+/*FOOTER TRANSMISSAO*/
+
+.footerlive{
+    text-align: center;
+}
+.footerlive a{
+    color: white;
+    font-size: 18px;
+    line-height: 28px; /*10px a mais do fontsize*/
+    margin: 0 16px;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+.footerlive a img{
+    height: 40px;
+}
+
+.footerlive a:hover{
+    color: var(--color-darkyellow);
+    transition: 300ms;
+}
+
+#links-footer-live a{
+    border-bottom: 1px solid var(--color-darkyellow);
+}
+
+@media only screen and (max-device-width: 700px) {
+    .video-formatura  {
+        
+        grid-template-columns: auto;
+    }
 }
