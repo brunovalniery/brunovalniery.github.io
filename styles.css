@@ -118,7 +118,6 @@ header{
     padding: 5px 20px;
     border-radius: 20px;
     text-align: center;
-    text
 }
 
 /*MODAL*/
@@ -129,6 +128,7 @@ header{
     position: fixed;
     top: 0;
     opacity: 0;
+    visibility: hidden;
 }
 
 .modal{
@@ -148,9 +148,13 @@ header{
 }
 
 /*MODAL.ACTIVE*/
-.modal-overlay.active{
-    opacity: 1;
+.modal-overlay .active{
+    opacity: 10;
+    visibility: visible;
 }
+
+
+
 
 /*Live da formatura*/
 .video-formatura{
@@ -202,9 +206,9 @@ header{
     border-bottom: 1px solid var(--color-darkyellow);
 }
 
+
 @media only screen and (max-device-width: 700px) {
     .video-formatura  {
         
-        grid-template-columns: auto;
     }
 }
