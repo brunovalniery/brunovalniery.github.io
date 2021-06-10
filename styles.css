@@ -161,19 +161,19 @@ header{
 .video-formatura{
     max-width: 1000px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    /*grid-template-columns: 1fr 1fr;*/
     gap: 20px;
 }
 
 .video-formatura img{
     height: 315px;
-    position:relative;
+    position: relative;
 }
 
 .video-formatura iframe{
     height: 315px;
-    position:relative;
+    position: relative;
 }
 
 #formatura{
@@ -207,3 +207,11 @@ header{
     border-bottom: 1px solid var(--color-darkyellow);
 }
 
+@media (max-width: 800px)
+{
+    .video-formatura img iframe{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+   }
+}
