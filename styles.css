@@ -181,6 +181,7 @@ header{
 }
 
 
+
 /*FOOTER TRANSMISSAO*/
 
 .footerlive{
@@ -207,11 +208,28 @@ header{
     border-bottom: 1px solid var(--color-darkyellow);
 }
 
-@media (max-width: 800px)
-{
-    .video-formatura img iframe{
+
+@media (max-width: 700px){
+    .video-formatura{
+        max-width: 1000px;
+        margin: 0 10vh;
+        /*display: flex;*/
+        /*grid-template-columns: 1fr 1fr;*/
+        gap: 20px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-   }
+        align-items: center;
+    }
+
+    .video-formatura img{
+        
+        width: 443px;
+        position: relative;
+    }
+
+    .video-formatura iframe{
+        width: 443px;
+        position: relative;
+    }
 }
