@@ -5,12 +5,12 @@ for(let card of cards) {
     card.addEventListener("click", function() { //Função ouvidor de eventos, no caso o "click"
         const videoId = card.getAttribute("id");
         modalOverlay.classList.add("active");
-        modalOverlay.querySelector("iframe").src = `https://www.youtube.com/embed/${videoId}`;
+       // modalOverlay.querySelector("iframe").src = `https://www.youtube.com/embed/${videoId}`;
     })
 }
 
 document.querySelector(".close-modal").addEventListener("click", function(){
     modalOverlay.classList.remove("active");
-    modalOverlay.querySelector("iframe").src = ""
+    //modalOverlay.querySelector("iframe").src = ""
 })
 
