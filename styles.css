@@ -11,15 +11,29 @@
     border: 0;
 }
 body{
-    background: #282a36;
+    background-image: linear-gradient(
+        45deg,
+        hsl(231, 100%, 16%) 0%,
+        hsl(273deg 64% 25%) 38%,
+        hsl(297deg 55% 31%) 63%,
+        hsl(316deg 52% 43%) 99%
+        );
     font-family: 'Lato', sans-serif;
     color: #fff;
+    width: 100vm;
+    height: 100vh;
+}
+#agenda{
+    background: #000c50 !important;
 }
 header{
     padding: 32px;
-    border-bottom: 1px solid #333;
-    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgb(101, 52, 108);
+    background: rgba(0, 0, 0, 0.3);
 }
+
+
+
 .links{
     text-align: center;
 }
@@ -107,7 +121,7 @@ header{
 }
 
 .card{
-    background-color: rgb(80, 80, 80);
+    background-color: #000c50;
 }
 
 .card__image-container img{
